@@ -1,0 +1,734 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Medicube Hospital
+Version:    1.0
+Created By: Md Shafiul Azam
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.Global
+2.Header
+3.Upperimage
+4.Service
+5.Footer
+
+-------------------------------------------------------------------*/
+
+/*-------------------global style start----------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+li a i {
+    font-size: 15px;
+    color: white;
+}
+
+/*-------------------global style end----------------------*/
+/*-------------------header style start----------------------*/
+header {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+
+.header-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+}
+
+.header-left-up {
+    padding-right: 20px;
+    padding-left: calc((100vw - 1170px) /2);
+    height: 65px;
+    border-bottom: 1px solid #00c9b7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 17px;
+    color: #00c9b7;
+}
+
+.header-address a {
+    padding-top: 5px;
+}
+
+.header-left-down {
+    padding-right: 20px;
+    padding-left: calc((100vw - 1170px) /2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 92px;
+}
+
+span.medi {
+    color: black;
+}
+
+.header-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.header-right-up {
+    background: #00c9b7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white;
+    height: 65px;
+}
+
+.social-media-logo {
+    list-style-type: none;
+    height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+}
+
+
+.social-media-logo li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    text-decoration: none;
+}
+
+.header-right-down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 92px;
+}
+
+.navbar-toggle {
+    display: none;
+    color: #00c9b7;
+    padding-right: 15px;
+}
+
+.fa-bars {
+    font-size: 30px;
+}
+
+#chkToggle {
+    display: none;
+}
+
+.welcome {
+    padding-right: 7%;
+    text-align: right;
+    font-size: 17px;
+    color: #00c9b7;
+}
+
+
+.header-address {
+    padding-left: 50px;
+
+    font-size: 17px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.header-address p {
+    padding-left: 5px;
+}
+
+.linkedin {
+    background: #01b2a2;
+}
+
+.plus1 {
+    width: 20px;
+    height: 2px;
+    background-color: #00c9b7;
+}
+
+.plus2 {
+    width: 20px;
+    height: 2px;
+    background-color: #00c9b7;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.header-down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 92px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 20%;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.cube {
+    color: #00c9b7;
+}
+
+.plus-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.navlist {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: 0;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.navlist li {
+    display: inline-block;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.navlist .home {
+    color: #00c9b7;
+
+}
+
+.navlist li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    padding: 0 10px 0 10px;
+}
+
+.phone-wrapper {
+    padding-right: 15px;
+}
+
+.phone-number {
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+
+}
+
+.phone-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #00c9b7;
+    border-radius: 50%;
+    width: 40px;
+}
+
+.phone-number p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*-------------------global style end----------------------*/
+/*-------------------upperimage style start----------------------*/
+.upperimage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-image: url(../img/upperimage.png);
+    background-size: 100% 100%;
+}
+
+.upperimage div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    z-index: 1;
+    height: 21vw;
+    width: 100%;
+    background: rgba(2, 37, 77, 0.70);
+    color: white;
+}
+
+.upperimage-para1 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.upperimage-para2 {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+/*-------------------uppermage style end----------------------*/
+/*-------------------service style start----------------------*/
+.services {
+    max-width: 1170px;
+    width: 95%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 7vw;
+    margin-bottom: 7vw;
+}
+
+.service-card {
+    -ms-flex-preferred-size: 31%;
+    flex-basis: 31%;
+    border: 1px solid #e7e7e7;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+}
+
+.service-card div {
+    padding: 25px;
+}
+
+/*-------------------service style end----------------------*/
+/*-------------------footer style end----------------------*/
+#footer {
+    display: block;
+    background: #2c3e50;
+}
+
+.footer {
+    width: 1170px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.about-us {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+}
+
+.footer-text {
+
+    -ms-flex-preferred-size: 20%;
+
+    flex-basis: 20%;
+}
+
+.about-us h1,
+.footer-text h1 {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.about-us p,
+.footer-text p {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    line-height: 2;
+}
+
+#free-hotline {
+    color: #00c9b7;
+}
+
+#neurology {
+    color: #00c9b7;
+}
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.copyright {
+
+    background: #203245;
+    height: 92px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1170px;
+    margin: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.copyright div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.copyright div p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.medicube {
+    color: #00c9b7;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.copyright-logos li a {
+    border: 1px solid #8a929a;
+}
+
+/*-------------------footer style end----------------------*/
+@media only screen and (max-width: 1170px) {
+
+    .header-left-up {
+        padding-right: 10px;
+        padding-left: calc((100vw - 95vw) /2);
+    }
+
+    .header-left-down {
+        padding-right: 0px;
+        padding-left: calc((100vw - 95vw) /2);
+    }
+
+    .slide-text {
+        width: 95%;
+    }
+
+    .footer {
+        width: 95%;
+    }
+
+    .copyright {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .address_2{
+        display: block;
+        }
+        .address_1{
+            display: none;
+        }
+    .patient-qoutes div {
+        -ms-flex-preferred-size: 28%;
+        flex-basis: 28%;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navlist {
+        display: none;
+    }
+
+    #chkToggle:checked+ul.navlist {
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 157px;
+        z-index: 2;
+    }
+
+    .navlist li {
+        display: block;
+        text-align: center;
+        background: #00c9b7;
+        filter: drop-shadow(21px 4px 6px black);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 1px solid white;
+    }
+
+    .navlist li a {
+        font-size: 25px;
+        font-weight: 600;
+        color: white;
+    }
+
+    .navlist .home {
+        color: white;
+
+    }
+
+    .header-right-down {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+
+    .phone-wrapper {
+        padding-right: 10%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .service-card {
+        -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+    }
+
+    .footer {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .footer-text {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        margin-bottom: 20px;
+    }
+
+    .about-us {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        margin-bottom: 20px;
+    }
+
+    .footer-department {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+    }
+
+    .footer-contactus {
+        -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+        order: 4;
+        -ms-flex-preferred-size: 250px;
+        flex-basis: 250px;
+    }
+
+    .footer-openinghours {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        -ms-flex-preferred-size: 250px;
+        flex-basis: 250px;
+    }
+
+    .copyright-text {
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .header-address {
+        padding-left: 5px;
+    }
+
+    .phone-wrapper {
+        display: none;
+    }
+
+    .service-card {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+
+    .footer {
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .about-us {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+
+    .footer-text {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+
+    .footer-department {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+
+    .footer-contactus {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+
+    .footer-openinghours {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+
+    .copyright {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .copyright div {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .copyright div p {
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+    }
+
+    .copyright-text {
+        display: block;
+        padding-bottom: 30px;
+    }
+}
